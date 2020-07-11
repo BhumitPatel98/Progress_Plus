@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/account_circle"
+        app:civ_border_color="#FFeeeeee"
+        app:civ_border_width="1dp" />
+
+
+    <TextView
+        android:id="@+id/stud_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/stud_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:text="A laboratory information managemenmanagement system (LMS), is a software- based laboratory and information management system with features that support a modern laboratory's operations"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/ic_picture_as_pdf_black_24dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/ic_picture_as_pdf_black_24dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/ic_filter_black_24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#fff" />
+</LinearLayout>
+

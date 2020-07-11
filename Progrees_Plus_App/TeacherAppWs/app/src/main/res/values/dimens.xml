@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fifteen_dp">15dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="btnHeight">150dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+
+
+    <dimen name="text_size_title">16dp</dimen>
+    <dimen name="text_size_big">17dp</dimen>
+    <dimen name="text_size_medium">13dp</dimen>
+    <!--<dimen name="text_size_medium_two">11dp</dimen>-->
+    <dimen name="text_size_biggest">19dp</dimen>
+    <dimen name="text_size_small">11dp</dimen>
+    <dimen name="text_size_smallest">9dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="g_top_margin">100dp</dimen>
+    <dimen name="dim_7">2.5dp</dimen>
+    <dimen name="dim_9">3dp</dimen>
+
+</resources>

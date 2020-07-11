@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg_color"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/logo_white" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_title" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.github.anastr.speedviewlib.SpeedView
+                android:id="@+id/speedView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:sv_speedTextSize="1dp"
+                app:sv_unitTextSize="1dp" />
+            <!--<com.github.mikephil.charting.charts.PieChart-->
+            <!--android:id="@+id/chart1"-->
+            <!--android:layout_width="240dp"-->
+            <!--android:layout_height="240dp" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:text="Month Report"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_title" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChart"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:text="Attendance"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_title" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/navigationmenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_bg_color"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/account_circle"
+                    app:civ_border_color="@color/white_transparent"
+                    app:civ_border_width="1dp" />
+
+
+                <TextView
+                    android:id="@+id/tv_student_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="User Name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/tv_school_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="School Name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+                <LinearLayout
+                    android:id="@+id/action_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="7dp"
+                        android:tint="@color/black"
+                        app:srcCompat="@drawable/ic_dashboard_black_24dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text="Dashboard"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/action_noticeBoard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="7dp"
+                        android:tint="@color/black"
+                        app:srcCompat="@drawable/ic_notice_board" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text="Notice Board"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/action_timeTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="7dp"
+                        android:tint="@color/black"
+                        app:srcCompat="@drawable/ic_date_range_black_24dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text="Time Table"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/action_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="7dp"
+                        android:tint="@color/black"
+                        app:srcCompat="@drawable/ic_acc" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text="Student Report"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/action_sub_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="7dp"
+                        android:tint="@color/black"
+                        app:srcCompat="@drawable/ic_acc" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text="Subject Report"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <ImageView
+                        android:id="@+id/down"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="7dp"
+                        android:tint="@color/black"
+                        app:srcCompat="@drawable/ic_down" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/action_rep_monthwise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="7dp"
+                        android:tint="@color/black"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/ic_dashboard_black_24dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text=" Monthwise"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/action_rep_datewise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="7dp"
+                        android:tint="@color/black"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/ic_dashboard_black_24dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text=" Datewise"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/action_change_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="7dp"
+                        android:tint="@color/black"
+                        app:srcCompat="@drawable/ic_password_app_col" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text="Change Password"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/action_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="7dp"
+                        android:tint="@color/black"
+                        app:srcCompat="@drawable/ic_sign_out" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text="@string/action_logout"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_medium" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

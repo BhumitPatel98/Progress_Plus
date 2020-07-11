@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Staff</string>
+    <string name="submit">Submit</string>
+    <string name="ok">Ok</string>
+    <string name="na">NA</string>
+    <string name="attendance">Attendance</string>
+    <string name="pls_enter_mobile_no">Please enter mobile No.</string>
+    <string name="pls_enter_password">Please enter password</string>
+    <string name="time_table">Time Table</string>
+    <string name="create_notice">Create Notice</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="copyrights">Copyright (c) 2018, All Rights Reserved</string>
+    <string name="action_logout">Logout</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+</resources>

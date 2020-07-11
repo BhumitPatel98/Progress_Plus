@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e84a3e</color>
+    <color name="colorPrimaryDark">#b73228</color>
+    <color name="colorAccent">#e84a3e</color>
+    <color name="main_bg_color">#e0e0e0</color>
+    <color name="lightPrimary">#d1e84a3e</color>
+
+
+    <color name="colorAccent2">#FFFFFF</color>
+    <color name="colorPrimary_tran">#ece84a3e</color>
+    <color name="coloraccent_tran">#ece84a3e</color>
+    <color name="app_color">#e84a3e</color>
+
+    <color name="statusbar_dark">#7d570c</color>
+    <color name="myDrawerBackground">#F5F5F6</color>
+    <color name="window_background">#EBEBEB</color>
+
+    <color name="button_color_border">#e84a3e</color>
+    <color name="present">#61dc30</color>
+    <color name="absent">#e84a3e</color>
+
+    <color name="text_black">#000</color>
+
+    <color name="black">#000000</color>
+    <color name="black_transparent">#b4000000</color>
+    <color name="black_transparentdark">#d8000000</color>
+
+    <color name="blue">#326cea</color>
+
+    <color name="gray_dark">#323232</color>
+    <color name="gray_dark2">#414141</color>
+    <color name="gray_medium">#838383</color>
+    <color name="text_color_hint">#808080</color>
+    <color name="gray_light">#9E9E9E</color>
+    <color name="gray_transparent">#66797979</color>
+    <color name="gray_light_transparent">#EAEAEA</color>
+    <color name="selected_transparent">#5f237c60</color>
+    <color name="selected_delete_transparent">#5fea3b32</color>
+    <color name="border_color">#dadada</color>
+    <color name="gray_cover">#EDEDED</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_transparent">#b0ffffff</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="blue_grey_500">#607D8B</color>
+    <color name="blue_grey_600">#546E7A</color>
+    <color name="blue_grey_700">#455A64</color>
+    <color name="blue_grey_800">#37474F</color>
+    <color name="blue_grey_900">#263238</color>
+
+
+
+    <color name="status_in_process">#25428bca</color>
+    <color name="status_payment_received">#25999999</color>
+    <color name="status_delivered">#251caf9a</color>
+    <color name="status_canceled">#25d9534f</color>
+    <color name="status_incomplete">#255bc0de</color>
+    <color name="status_pending">#25f0ad4e</color>
+    <color name="status_complete">#251caf9a</color>
+    <color name="status_moneycollected">#25506776</color>
+    <color name="status_refund_process">#25ff3366</color>
+    <color name="status_payment_failed">#25a23c3c</color>
+
+    <integer-array name="androidcolors">
+        <item>@color/status_payment_failed</item>
+        <item>@color/status_in_process</item>
+        <item>@color/status_canceled</item>
+        <item>@color/status_refund_process</item>
+        <item>@color/status_complete</item>
+        <item>@color/status_refund_process</item>
+        <item>@color/status_incomplete</item>
+        <item>@color/status_delivered</item>
+        <item>@color/status_pending</item>
+        <item>@color/status_incomplete</item>
+    </integer-array>
+
+</resources>

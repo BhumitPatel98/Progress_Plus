@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:text="Subject Wise Report"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_title" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="May"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_title" />
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="2018"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_title" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TodayLacture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selection"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:text="Subject Wise"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_title" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lectureList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/TodayLacture"
+        android:layoutAnimation="@anim/layout_animation_fall_down">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <TextView
+        android:id="@+id/noItemFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No data found"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

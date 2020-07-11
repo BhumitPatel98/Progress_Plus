@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_dashboard"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/action_timeTable"
+        android:icon="@drawable/ic_date_range_black_24dp"
+        android:title="Time Table" />
+
+    <item
+        android:id="@+id/action_noticeBoard"
+        android:icon="@drawable/ic_notice_board"
+        android:title="Notice Board" />
+    <!--<item-->
+        <!--android:id="@+id/action_proxy"-->
+        <!--android:icon="@drawable/ic_notice_board"-->
+        <!--android:title="Proxy" />-->
+    <item
+        android:id="@+id/action_report"
+        android:icon="@drawable/ic_acc"
+        android:title="Staff Report">
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/action_rep_monthwise"-->
+                <!--android:icon="@drawable/ic_date_range_black_24dp"-->
+                <!--android:title="Monthwise"-->
+                <!--android:visible="false" />-->
+            <!--<item-->
+                <!--android:id="@+id/action_rep_datewise"-->
+                <!--android:icon="@drawable/ic_date_range_black_24dp"-->
+                <!--android:title="Datewise"-->
+                <!--android:visible="false" />-->
+        <!--</menu>-->
+    </item>
+    <item
+        android:id="@+id/action_change_pass"
+        android:icon="@drawable/ic_password_app_col"
+        android:title="Change Password" />
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/ic_sign_out"
+        android:orderInCategory="100"
+        android:title="@string/action_logout"
+        app:showAsAction="never" />
+</menu>

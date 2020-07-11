@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#054f8e</color>
+    <color name="colorPrimaryDark">#024076</color>
+    <color name="colorAccent">#313fa0</color>
+    <color name="main_bg_color">#e0e0e0</color>
+    <color name="lightPrimary">#d10e66b1</color>
+
+
+    <color name="colorAccent2">#FFFFFF</color>
+    <color name="colorPrimary_tran">#ec313fa0</color>
+    <color name="coloraccent_tran">#ec55a1d1</color>
+    <color name="app_color">#313fa0</color>
+
+    <color name="statusbar_dark">#7d570c</color>
+    <color name="myDrawerBackground">#F5F5F6</color>
+    <color name="window_background">#EBEBEB</color>
+
+    <color name="button_color_border">#19288c</color>
+
+
+    <color name="text_black">#000</color>
+
+    <color name="black">#000000</color>
+    <color name="black_transparent">#b4000000</color>
+    <color name="black_transparentdark">#d8000000</color>
+    <color name="blue">#326cea</color>
+
+    <color name="gray_dark">#323232</color>
+    <color name="gray_dark2">#414141</color>
+    <color name="gray_medium">#838383</color>
+    <color name="text_color_hint">#808080</color>
+    <color name="gray_light">#9E9E9E</color>
+    <color name="gray_transparent">#66797979</color>
+    <color name="gray_light_transparent">#EAEAEA</color>
+    <color name="selected_transparent">#5f237c60</color>
+    <color name="selected_delete_transparent">#5fea3b32</color>
+    <color name="border_color">#dadada</color>
+    <color name="gray_cover">#EDEDED</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_transparent">#b0ffffff</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="blue_grey_500">#607D8B</color>
+    <color name="blue_grey_600">#546E7A</color>
+    <color name="blue_grey_700">#455A64</color>
+    <color name="blue_grey_800">#37474F</color>
+    <color name="blue_grey_900">#263238</color>
+</resources>

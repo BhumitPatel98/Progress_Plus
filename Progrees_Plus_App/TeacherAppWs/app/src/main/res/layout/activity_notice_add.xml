@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent"
+        app:title="Create Notice"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerInParent="true"
+        android:clickable="false">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:clickable="false"
+            app:cardCornerRadius="3dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/noticeTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/xml_app_color_square_box"
+                    android:hint="Notice Title"
+                    android:inputType="textCapWords"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/text_size_medium" />
+
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/xml_app_color_square_box"
+                    android:padding="8dp"
+                    android:hint="Message"
+                    android:inputType="textCapSentences"
+
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/fromDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/xml_app_color_square_box"
+                    android:drawableRight="@drawable/ic_date_range_black_24dp"
+                    android:gravity="center_vertical"
+                    android:hint="From Date"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/text_size_medium" />
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/toDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/xml_app_color_square_box"
+                    android:drawableRight="@drawable/ic_date_range_black_24dp"
+                    android:gravity="center_vertical"
+                    android:hint="To Date"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/attachments"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/xml_app_color_square_box"
+                    android:drawableRight="@drawable/ic_attach_file_black_24dp"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="Add AtttaChment"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/attachment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="AtttaChment 1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/attachment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="AtttaChment 2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/attachment3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="AtttaChment 3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|right"
+                    android:text="(png/jpg/pdf/word) MAX 3 Mb"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/xml_app_color_square_box"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:text="Notice for:"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <com.thomashaertel.widget.MultiSpinner
+                        android:id="@+id/spinnerMulti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/cbSendSms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="Send SMS"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium" />
+
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/smsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/xml_app_color_square_box"
+                    android:gravity="left"
+                    android:hint="SMS text"
+                    android:inputType="text"
+                    android:lines="3"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/submitBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="@string/submit"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>
